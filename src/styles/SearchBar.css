@@ -1,0 +1,14 @@
+/* src/styles/SearchBar.css */
+.search-bar {
+  padding: 1rem;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 90%;
+  max-width: 500px;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}

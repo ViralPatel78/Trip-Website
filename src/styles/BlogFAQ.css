@@ -1,0 +1,73 @@
+/* src/styles/BlogFAQ.css */
+
+.faq-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(-45deg, #ffffff, #f7f6f2, #f47c00, #0e3c36);
+  background-size: 400% 400%;
+  animation: bgSlide 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes bgSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0e3c36;
+}
+
+.faq-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f47c00;
+}
+
+.faq-header p {
+  font-size: 1.1rem;
+  color: #0e3c36;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0e3c36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  color: #f47c00;
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  margin-top: 0.8rem;
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.5;
+}

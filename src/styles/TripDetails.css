@@ -1,0 +1,113 @@
+.trip-details-wrapper {
+  padding: 3rem 2rem 1rem;
+  background-color: #fdfdfc;
+}
+
+.trip-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.trip-image-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.trip-info-section {
+  padding: 1rem 0;
+  color: #0e3c36;
+}
+
+.trip-info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.trip-info-section p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.price-tag {
+  font-size: 1.4rem;
+  color: #f47c00;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.book-btn {
+  display: inline-block;
+  background-color: #0e3c36;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #144d47;
+}
+
+/* GALLERY SECTION */
+.trip-gallery-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.trip-gallery-section h3 {
+  font-size: 1.6rem;
+  color: #0e3c36;
+  margin-bottom: 1.2rem;
+}
+
+.gallery-thumbnails-only {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.gallery-thumbnails-only::-webkit-scrollbar {
+  display: none;
+}
+
+.thumb-img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive layout for trip details */
+@media (min-width: 768px) {
+  .trip-details-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .trip-image-section,
+  .trip-info-section {
+    flex: 1;
+  }
+
+  .trip-image-section {
+    margin-right: 2rem;
+  }
+}

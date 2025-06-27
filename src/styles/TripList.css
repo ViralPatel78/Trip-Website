@@ -1,0 +1,39 @@
+/* src/styles/TripList.css */
+.trip-list-container {
+  padding: 3rem 2rem;
+  background: #fdfdfc;
+  min-height: 100vh;
+}
+
+.trip-list-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #0e3c36;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.trip-list-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #f47c00;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.no-trips {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 3rem;
+}

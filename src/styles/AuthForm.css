@@ -1,0 +1,126 @@
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f5ee;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-left {
+  flex: 1;
+  background: url('../assets/travel.jpg') center center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-left-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(14, 60, 54, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 40px;
+  text-align: center;
+}
+
+.image-hover-effect:hover .auth-left-overlay {
+  opacity: 1;
+}
+
+.image-hover-effect:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+  background: #fff;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.auth-card h2 {
+  margin-bottom: 24px;
+  color: #0e3c36;
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.auth-card input:focus {
+  border-color: #f47c00;
+  outline: none;
+}
+
+.auth-card button {
+  width: 100%;
+  background-color: #f47c00;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-card button:hover {
+  background-color: #d95f00;
+}
+
+.auth-card p {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.auth-card a {
+  color: #f47c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    height: 250px;
+  }
+
+  .auth-left-overlay {
+    font-size: 1.3rem;
+  }
+
+  .auth-right {
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,58 @@
+/* src/styles/SuccessPage.css */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  background: linear-gradient(to right, #0e3c36, #144d47);
+}
+
+.success-card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+}
+
+.success-card h2 {
+  color: #0e3c36;
+  margin-bottom: 1rem;
+}
+
+.success-card p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.dashboard-btn,
+.trip-btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.dashboard-btn {
+  background-color: #0e3c36;
+  color: white;
+}
+
+.trip-btn {
+  background-color: #f47c00;
+  color: white;
+}
+
+.dashboard-btn:hover {
+  background-color: #144d47;
+}
+
+.trip-btn:hover {
+  background-color: #cc6400;
+}

@@ -1,0 +1,33 @@
+/* src/styles/NotFoundPage.css */
+.notfound-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  background-color: #f9f9f9;
+}
+
+.notfound-container h1 {
+  font-size: 6rem;
+  color: #f47c00;
+}
+
+.notfound-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #0e3c36;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-home-btn:hover {
+  background-color: #144d47;
+}

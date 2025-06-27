@@ -1,0 +1,20 @@
+/* src/styles/TripFilterSidebar.css */
+.filter-sidebar {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.filter-sidebar h3 {
+  color: #0e3c36;
+  margin-bottom: 0.5rem;
+}
+
+.filter-sidebar select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
